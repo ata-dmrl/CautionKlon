@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AWS Nitro Enclaves | Caution</title>
+  <meta name="description" content="Know what runs in your AWS enclaves." />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../pages.css" />
+  <script>try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+</head>
+<body data-root="../">
+  <div id="site-header"></div>
+  <main>
+<div class="hero-wrap"><section class="page-hero"><div class="container hero-grid">
+<div><span class="eyebrow">AWS Nitro Enclaves</span>
+<h1>Know what runs in your AWS enclaves</h1>
+<p class="section-desc">Deploy to AWS Nitro Enclaves faster. Gain stronger integrity guarantees with cryptographic proof that each enclave runs the intended source code.</p>
+<div class="cta-group"><a href="../contact.html" class="cta-btn">Book a demo</a></div>
+<a href="#aws-highlights" class="cta-link" style="margin-top:20px">Learn more <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+<ul class="stack verified" data-stack="verified"></ul>
+</div></section><div class="logos"><p class="logos-title">From engineers trusted by industry leaders</p><div class="marquee"><div class="marquee-track logo-track"></div></div></div></div>
+<nav class="toc" aria-label="On this page"><div class="container toc-inner"><a href="#aws-highlights">TL;DR</a><a href="#why-verification">Why verification</a><a href="#what-caution-adds">What Caution adds</a><a href="#who-benefits">Who benefits</a><a href="#use-cases">Use cases</a><a href="#how-it-works">How it works</a><a href="#aws-sellers">AWS sellers</a><a href="#faq">FAQ</a></div></nav>
+
+<section class="block" id="aws-highlights" style="border-top:0"><div class="container">
+<div class="grid c4"><div class="card"><span class="eyebrow">What Caution is</span><p>Verifiable compute platform that adds an extra layer of integrity guarantees on top of AWS Nitro Enclaves.</p></div><div class="card"><span class="eyebrow">AWS value</span><p>Faster adoption of confidential compute on AWS Nitro Enclaves, with independent verification of enclave workloads.</p></div><div class="card"><span class="eyebrow">Who it's for</span><p>Teams running sensitive AI, financial, healthcare, Web3, and other workloads on AWS that need stronger end-to-end security and assurance.</p></div><div class="card"><span class="eyebrow">How it runs</span><p>Integrates with existing AWS accounts and CI/CD pipelines, with flexible deployment options.</p></div></div>
+</div></section>
+
+<section class="block alt" id="why-verification"><div class="container two-col" style="align-items:start">
+<div><span class="eyebrow">Why verification</span><h2 class="section-title">Independent verification for Nitro Enclaves</h2>
+<p class="section-desc">AWS Nitro Enclaves provide strong guarantees about hardware isolation and integrity. Verification extends those guarantees by linking the binaries running in the enclave back to the source code they came from.</p>
+<p style="margin-top:24px"><a href="https://docs.caution.co/concepts/verifiability/" target="_blank" rel="noopener noreferrer" class="cta-link">Learn about verifiability <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></p></div>
+<div><p class="eyebrow" style="margin-bottom:16px">Without verification</p><ul class="without">
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4M12 17h.01"/></svg>Backdoored or swapped binaries can appear legitimate without independent verification.</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4M12 17h.01"/></svg>Supply-chain issues can slip through when only enclave measurements are verified.</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4M12 17h.01"/></svg>Teams must rely on operator assurances instead of independent verification.</li>
+</ul></div></div></section>
+
+<section class="what" id="what-caution-adds" style="border-top:0"><div class="container">
+<div class="what-head"><span class="eyebrow">What Caution adds</span><h2 class="section-title">What Caution adds to AWS Nitro Enclaves</h2>
+<p class="section-desc">Caution links Nitro Enclaves back to the source, build, and deployment pipeline so every enclave run is independently provable.</p></div>
+<div class="what-frame"><div class="tabs" role="tablist"><button class="tab active" data-tab="0" role="tab">Prove what was deployed</button><button class="tab" data-tab="1" role="tab">Detect tampering early</button><button class="tab" data-tab="2" role="tab">Deploy to enclaves in minutes</button><button class="tab" data-tab="3" role="tab">Keep your workflows</button></div><div><div class="panel active" data-panel="0"><svg class="pix" data-pix="check"></svg><div><h3>Prove what was deployed</h3><p>Cryptographically link the code running in your AWS Nitro Enclave to the reviewed source code, build, and configuration that produced it.</p><p>Caution leverages full-source bootstrapping and reproducibility all the way down to the kernel, via <a href="https://stagex.tools/" target="_blank" rel="noopener noreferrer">StageX</a> and <a href="https://distrust.co/blog/enclaveos.html" target="_blank" rel="noopener noreferrer">EnclaveOS</a>, so you can verify the entire stack, not just the application layer.</p></div></div><div class="panel" data-panel="1"><svg class="pix" data-pix="eye"></svg><div><h3>Detect tampering early</h3><p>Surface unauthorised changes before they reach production. If a binary doesn't match the expected source, you'll know immediately.</p></div></div><div class="panel" data-panel="2"><svg class="pix" data-pix="bolt"></svg><div><h3>Deploy to enclaves in minutes</h3><p>Replace weeks of custom infrastructure and security engineering with one unified workflow that runs in minutes. Deploying to a Nitro Enclave has never been this fast.</p></div></div><div class="panel" data-panel="3"><svg class="pix" data-pix="loop"></svg><div><h3>Keep your workflows</h3><p>Integrate with your existing CI/CD, infrastructure-as-code, and deployment tooling. Caution fits into what you already use rather than replacing it.</p></div></div></div></div>
+<div class="what-cta"><div class="cta-group"><a href="../platform-tour.html" class="cta-link">Watch the 3-minute tour <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>&nbsp;&nbsp;&nbsp;<a href="https://docs.caution.co/what-is-caution/" target="_blank" rel="noopener noreferrer" class="cta-link">View docs <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+</div></section>
+
+<section class="who" id="who-benefits">
+<div class="ticker"><div class="ticker-track" data-ticker></div></div>
+<div class="container who-grid"><div class="vmarquee"></div>
+<div class="who-right"><span class="eyebrow">Who benefits</span><h2>Which AWS customers benefit most</h2>
+<p>Caution works across industries and workload types. It is most useful for high-assurance workloads on AWS where integrity failures would be costly or catastrophic.</p>
+<a href="#use-cases" class="cta-link">See how teams use Caution <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div></div>
+<div class="ticker bottom"><div class="ticker-track" data-ticker></div></div></section>
+
+<section class="uc" id="use-cases" data-where="Nitro Enclaves"><div class="container">
+<span class="eyebrow">Use cases</span><h2 class="section-title">How teams use Caution on AWS</h2>
+<p class="section-desc">Explore common workloads teams deploy on AWS Nitro Enclaves with verifiable builds.</p>
+<div class="uc-carousel"><div class="uc-track"></div></div>
+<div class="uc-arrows"><button class="uc-arrow prev" aria-label="Previous use case"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button><button class="uc-arrow next" aria-label="Next use case"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button></div>
+</div></section>
+
+<section class="how" id="how-it-works" style="border-top:1px solid var(--border)"><div class="container">
+<span class="eyebrow">How it works</span><h2 class="section-title">Deploy to AWS Nitro Enclaves in minutes</h2>
+<p class="section-desc">Caution integrates with existing AWS accounts and CI/CD pipelines, collapsing what is often a complex, custom Nitro deployment into a repeatable workflow that completes in minutes.</p>
+<div class="how-cards">
+<div class="how-card"><span class="num">1</span><h3>Initialize</h3><p>Run <code>caution init</code> in your project.</p><div class="terminal" data-term='["$ caution init","Initializing the app..."]'></div></div>
+<div class="how-card"><span class="num">2</span><h3>Deploy</h3><p>Push with <code>git push caution main</code> to build and provision the enclave.</p><div class="terminal" data-term='["$ git push caution main","Building enclave image...","✓ Deployed to enclave"]'></div></div>
+<div class="how-card"><span class="num">3</span><h3>Verify</h3><p>Run <code>caution verify</code> to rebuild and compare against the live attestation.</p><div class="terminal" data-term='["$ caution verify","Rebuilding image...","Comparing hashes...","✓ Attestation verification PASSED"]'></div></div>
+</div>
+<div style="display:flex;justify-content:center;margin-top:48px"><div class="cta-group"><a href="../contact.html" class="cta-btn">Book a demo</a></div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://docs.caution.co/what-is-caution/" target="_blank" rel="noopener noreferrer" class="cta-link">View docs <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+</div></section>
+
+<section class="block alt" id="aws-sellers"><div class="container two-col" style="align-items:start">
+<div><span class="eyebrow">AWS sellers</span><h2 class="section-title">Positioning Caution in Nitro opportunities</h2>
+<p class="section-desc">Position Caution when Nitro adoption is blocked by integrity, security, or expertise gaps.</p>
+<p class="callout"><a href="../contact.html#book" class="link">Talk with our engineers</a> about the customer’s deployment and next steps.</p>
+<a href="../pricing.html" class="cta-link">View deployment options <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+<div><p class="eyebrow" style="margin-bottom:16px">Use Caution when</p><ul class="without">
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Customer asks, "How do we prove what runs inside the enclave?"</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Security or compliance blocks Nitro due to lack of code-to-enclave proof.</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Customer lacks in-house enclave expertise or time.</li>
+</ul></div></div></section>
+
+<section class="faq" id="faq"><div class="container"><span class="eyebrow">FAQs</span><h2>Frequently asked questions</h2><div class="faq-items"><div class="faq-item"><button class="faq-q" aria-expanded="false"><span>What is Caution?</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button><div class="faq-a"><div><p>Caution is a verifiable compute platform that adds an extra layer of integrity guarantees on top of AWS Nitro Enclaves. It cryptographically links the code running inside an enclave back to the reviewed source code, build inputs, and configuration that produced the enclave image, so anyone can verify what is running in production.</p><p>Additional attestation backends are in active development.</p></div></div></div><div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Does Caution replace AWS Nitro Enclaves?</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button><div class="faq-a"><div><p>No. Caution builds on top of AWS Nitro Enclaves, not instead of them. Nitro provides hardware-level isolation and attestation. Caution extends those guarantees by linking enclave measurements back to auditable source code and reproducible builds.</p></div></div></div><div class="faq-item"><button class="faq-q" aria-expanded="false"><span>What do I need to get started?</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button><div class="faq-a"><div><p><a href="../contact.html#book">Book 20 minutes</a> with one of our engineers. We’ll discuss your goals, answer technical questions, and help you get ready to deploy with Caution.</p></div></div></div><div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Which deployment options are available?</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button><div class="faq-a"><div><p>Caution offers bring-your-own-compute and fully managed deployment options. Because Caution is open source, teams can also self-host it if they want to operate deployments independently.</p><p>Compare the options in the <a href="https://docs.caution.co/reference/deployment-models/" target="_blank" rel="noopener noreferrer">deployment models</a> reference.</p></div></div></div></div></div></section>
+<section class="final" style="padding-top:clamp(64px,8vw,120px)"><div class="container"><div class="final-inner">
+<div><h2>Get started</h2><div class="cta-group"><a href="../contact.html" class="cta-btn">Book a demo</a><a href="../platform-tour.html" class="cta-link">Watch the tour <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div></div>
+<p>Deploy confidential compute in minutes. Prove exactly what is running in production, from source code to live enclave.</p>
+</div></div></section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="../layout.js"></script>
+  <script src="../main.js"></script>
+</body>
+</html>

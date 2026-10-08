@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog | Caution</title>
+  <meta name="description" content="Engineering blog from the team building verifiable compute." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="pages.css" />
+  <script>try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+</head>
+<body data-root="">
+  <div id="site-header"></div>
+  <main>
+<section class="page-hero"><div class="container">
+<span class="eyebrow">Blog</span><h1>Engineering blog</h1>
+<p class="section-desc">From the security engineers building verifiable compute.</p></div></section>
+<section style="padding-bottom:clamp(64px,8vw,120px)"><div class="container">
+<div class="filters" data-filters><button class="filter active" data-filter="all">all</button><button class="filter" data-filter="analysis">analysis</button><button class="filter" data-filter="announcement">announcement</button><button class="filter" data-filter="demo">demo</button><button class="filter" data-filter="insight">insight</button><button class="filter" data-filter="release">release</button></div>
+<div class="grid c3" data-filter-grid><a class="card blog-feature" href="https://caution.co/blog/building-an-mpc-cosigner-you-can-verify.html" target="_blank" rel="noopener noreferrer" data-tag="demo">
+<div class="thumb"><svg viewBox="0 0 26 26" fill="currentColor"><path d="M13 2 L16.2 7.6 L9.8 7.6 Z"/><path d="M8.6 9.6 L11.8 15.2 L2.2 21.4 Z"/><path d="M17.4 9.6 L23.8 21.4 L14.2 15.2 Z"/><path d="M5 23.6 L21 23.6 L13 18.6 Z"/></svg></div>
+<div style="display:flex;flex-direction:column;gap:14px"><span class="tag" style="align-self:flex-start">Latest · demo</span><h3>Building an MPC cosigner you can verify</h3><p>How to close the gap between the code you can inspect and the code a remote cosigning service actually runs.</p>
+<div class="meta"><span>Sep 21, 2026</span><span class="read">Read <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></div></a><a class="card" href="https://caution.co/blog/mitre-attacks.html" target="_blank" rel="noopener noreferrer" data-tag="analysis">
+<span class="tag" style="align-self:flex-start">analysis</span><h3>Which attack paths can verifiable compute block or contain?</h3><p>Mapping ATT&amp;CK techniques to the controls and assumptions that make host, cloud account and pipeline compromise insufficient.</p>
+<div class="meta"><span>Sep 9, 2026</span><span class="read">Read <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></a><a class="card" href="https://caution.co/blog/steve-attesting-the-session.html" target="_blank" rel="noopener noreferrer" data-tag="release">
+<span class="tag" style="align-self:flex-start">release</span><h3>STEVE: Attesting the session, not just the enclave</h3><p>STEVE v2 binds fresh attestation to every session, proving the enclave holds its traffic keys.</p>
+<div class="meta"><span>Aug 25, 2026</span><span class="read">Read <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></a><a class="card" href="https://caution.co/blog/post-mythos-security-confidential-compute.html" target="_blank" rel="noopener noreferrer" data-tag="analysis">
+<span class="tag" style="align-self:flex-start">analysis</span><h3>Post-Mythos security: the case for confidential compute</h3><p>Why defence-in-depth for sensitive workloads has become a baseline requirement.</p>
+<div class="meta"><span>Aug 12, 2026</span><span class="read">Read <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></a><a class="card" href="https://caution.co/blog/tee-fail-security-theatre.html" target="_blank" rel="noopener noreferrer" data-tag="analysis">
+<span class="tag" style="align-self:flex-start">analysis</span><h3>TEE.fail does not make confidential computing security theatre</h3><p>What the TEE.fail results should change about system design and marketing, and what they don't.</p>
+<div class="meta"><span>Aug 6, 2026</span><span class="read">Read <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></a><a class="card" href="https://caution.co/blog/taiko-bridge-exploit.html" target="_blank" rel="noopener noreferrer" data-tag="analysis">
+<span class="tag" style="align-self:flex-start">analysis</span><h3>The Taiko bridge exploit is a trust-model failure, not a TEE failure</h3><p>An architectural post-mortem: the leaked signing key, not Intel SGX, was the weak point.</p>
+<div class="meta"><span>Jun 30, 2026</span><span class="read">Read <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></a><a class="card" href="https://caution.co/blog/on-transparency.html" target="_blank" rel="noopener noreferrer" data-tag="insight">
+<span class="tag" style="align-self:flex-start">insight</span><h3>Verify, don't trust</h3><p>Vendors promise security; verifiable compute replaces those promises with cryptographic proof.</p>
+<div class="meta"><span>Mar 10, 2026</span><span class="read">Read <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></a><a class="card" href="https://caution.co/blog/verifiable-llms.html" target="_blank" rel="noopener noreferrer" data-tag="demo">
+<span class="tag" style="align-self:flex-start">demo</span><h3>First fully verifiable AI/LLM deployment</h3><p>Deploying an LLM to a secure enclave and verifying exactly what code serves the inference.</p>
+<div class="meta"><span>Feb 4, 2026</span><span class="read">Read <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></a><a class="card" href="https://caution.co/blog/introducing-caution.html" target="_blank" rel="noopener noreferrer" data-tag="announcement">
+<span class="tag" style="align-self:flex-start">announcement</span><h3>Caution: Verifiable compute made simple</h3><p>Deploy enclaves with two commands and let anyone independently verify what's running.</p>
+<div class="meta"><span>Dec 1, 2025</span><span class="read">Read <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></a><a class="card" href="https://caution.co/blog/the-case-for-verifiable-compute.html" target="_blank" rel="noopener noreferrer" data-tag="insight">
+<span class="tag" style="align-self:flex-start">insight</span><h3>The case for verifiable compute</h3><p>If you had to prove what software is running on a system, how would you do it?</p>
+<div class="meta"><span>Sep 29, 2025</span><span class="read">Read <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></a></div>
+</div></section>
+<section class="block alt"><div class="container selfhost">
+<div><h2>See verifiable compute in action</h2><p class="section-desc">Take a three-minute tour from source code and reproducible builds to a running, verifiable workload.</p></div>
+<a href="platform-tour.html" class="cta-btn">Explore the platform</a></div></section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="layout.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

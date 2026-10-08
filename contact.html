@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Caution</title>
+  <meta name="description" content="Talk to the Caution team." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="pages.css" />
+  <script>try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+</head>
+<body data-root="">
+  <div id="site-header"></div>
+  <main>
+<section class="page-hero"><div class="container">
+<span class="eyebrow">Talk to our team</span><h1>Let’s talk about your deployment</h1>
+<p class="section-desc">Have questions about Caution? We'd love to hear from you.</p></div></section>
+<section style="padding-bottom:clamp(64px,8vw,120px)"><div class="container contact-grid">
+<div class="card contact-card" id="book"><span class="eyebrow">Book a demo</span><h2>20 minutes with an engineer</h2>
+<ul class="book-steps">
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><b>Your goals</b> — tell us about the workload you want to protect.</span></li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><b>Technical Q&amp;A</b> — attestation, reproducible builds, deployment models.</span></li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><b>Next steps</b> — get ready to deploy with Caution.</span></li>
+</ul>
+<div class="cta-group" style="margin-top:12px"><a href="mailto:team@caution.co?subject=Book%20a%20demo" class="cta-btn">Book a demo</a><a href="mailto:team@caution.co?subject=Caution%20Inquiry&body=Hi%20Caution%20team%2C%0A%0AI%E2%80%99m%20interested%20in%20learning%20more%20about%20Caution.%0A%0AMy%20company%20name%3A%20%0AUse%20case%3A%20%0AAdditional%20details%3A%20%0A%0AThanks!" class="cta-link">Email team@caution.co <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div></div>
+<div style="display:grid;gap:20px">
+<a class="card" href="mailto:team@caution.co?subject=Caution%20Inquiry&body=Hi%20Caution%20team%2C%0A%0AI%E2%80%99m%20interested%20in%20learning%20more%20about%20Caution.%0A%0AMy%20company%20name%3A%20%0AUse%20case%3A%20%0AAdditional%20details%3A%20%0A%0AThanks!"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></div><span class="eyebrow">Email us</span><h3>Contact us</h3><p>Send us a note and we'll get back to you.</p><span class="read">Send an email <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></a>
+<a class="card" href="https://docs.caution.co/" target="_blank" rel="noopener noreferrer"><div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div><h3>Explore documentation</h3><p>Read technical guides for deploying and verifying workloads with Caution.</p><span class="read">Read the docs <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></a>
+</div></div></section>
+<div class="logos"><p class="logos-title">From engineers trusted by industry leaders</p><div class="marquee"><div class="marquee-track logo-track"></div></div></div>
+<section class="faq"><div class="container"><span class="eyebrow">FAQs</span><h2>Frequently asked questions</h2><div class="faq-items"><div class="faq-item"><button class="faq-q" aria-expanded="false"><span>What is Caution?</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button><div class="faq-a"><div><p>Caution is a verifiable compute platform that adds an extra layer of integrity guarantees on top of confidential compute. It cryptographically links the code running inside an enclave back to the reviewed source code, build inputs, and configuration that produced the enclave image, so anyone can verify what is running in production.</p><p>Caution currently supports deployments on AWS Nitro Enclaves, with additional attestation backends in active development.</p></div></div></div><div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Does Caution replace AWS Nitro Enclaves?</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button><div class="faq-a"><div><p>No. Caution builds on top of AWS Nitro Enclaves, not instead of them. Nitro provides hardware-level isolation and attestation. Caution extends those guarantees by linking enclave measurements back to auditable source code and reproducible builds.</p></div></div></div><div class="faq-item"><button class="faq-q" aria-expanded="false"><span>What do I need to get started?</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button><div class="faq-a"><div><p><a href="contact.html#book">Book 20 minutes</a> with one of our engineers. We’ll discuss your goals, answer technical questions, and help you get ready to deploy with Caution.</p></div></div></div><div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Which deployment options are available?</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button><div class="faq-a"><div><p>Caution offers bring-your-own-compute and fully managed deployment options. Because Caution is open source, teams can also self-host it if they want to operate deployments independently.</p><p>Compare the options in the <a href="https://docs.caution.co/reference/deployment-models/" target="_blank" rel="noopener noreferrer">deployment models</a> reference.</p></div></div></div><div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Is Caution open source?</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button><div class="faq-a"><div><p>Yes. Caution is fully open source, which is essential for verifiable compute. You can't ask people to trust a verification system they can't inspect. Open source means you can audit the build process, verify our tooling does what we claim, and even run the entire system yourself if you prefer.</p></div></div></div></div></div></section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="layout.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

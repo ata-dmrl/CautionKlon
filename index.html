@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Caution: Verifiable Compute Platform</title>
+  <meta name="description" content="Deploy sensitive workloads to secure enclaves in minutes, with cryptographic proof that production matches the reviewed source." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="pages.css" />
+  <script>
+    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+
+  <div id="site-header"></div>
+
+  <main>
+    <!-- Hero -->
+    <div class="hero-wrap">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <span class="eyebrow">Verifiable compute</span>
+            <h1>Know what runs on a server</h1>
+            <p>Deploy sensitive workloads to secure enclaves in minutes, with cryptographic proof that production matches the reviewed source.</p>
+            <div class="cta-group">
+              <a href="contact.html" class="cta-btn">Book a demo</a>
+              <a href="platform-tour.html" class="cta-link">Watch the 3-minute tour
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+          <ul class="stack verified" aria-label="Verified stack" data-stack="verified"></ul>
+        </div>
+      </section>
+
+      <!-- Logos -->
+      <div class="logos">
+        <p class="logos-title">From engineers trusted by industry leaders</p>
+        <div class="marquee"><div class="marquee-track logo-track"></div></div>
+      </div>
+
+      <!-- Differentiator -->
+      <section class="diff">
+        <div class="container">
+          <h2 id="diff-title" data-words="Verify|the|layers|confidential|compute|~leaves|~opaque"></h2>
+          <div class="diff-grid">
+            <article class="diff-card reveal">
+              <div>
+                <h3>Regular cloud</h3>
+                <p>Trust the operator. Production stays a black box.</p>
+              </div>
+              <div class="diff-visual dark"></div>
+            </article>
+            <article class="diff-card reveal">
+              <div>
+                <h3>Confidential compute</h3>
+                <p>Trust the hardware. The software stack still stays opaque.</p>
+              </div>
+              <div class="diff-visual">
+                <ul class="stack partial" aria-label="Partially visible stack">
+                  <li><span class="dot"></span>Application</li>
+                  <li>Runtime</li>
+                  <li>OS / Kernel</li>
+                  <li><span class="dot"></span>Hardware / TEE</li>
+                  <li>Compiler / Toolchain</li>
+                </ul>
+              </div>
+            </article>
+            <article class="diff-card reveal">
+              <div>
+                <h3>
+                  <svg viewBox="0 0 26 26" fill="var(--brand)" aria-hidden="true"><path d="M13 2 L16.2 7.6 L9.8 7.6 Z"/><path d="M8.6 9.6 L11.8 15.2 L2.2 21.4 Z"/><path d="M17.4 9.6 L23.8 21.4 L14.2 15.2 Z"/><path d="M5 23.6 L21 23.6 L13 18.6 Z"/></svg>
+                  Verifiable compute
+                </h3>
+                <p>Don't trust. Verify every layer yourself, down to the compiler.</p>
+              </div>
+              <div class="diff-visual">
+                <ul class="stack verified" data-stack="verified" style="width:100%"></ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- What Caution does -->
+    <section class="what">
+      <div class="container">
+        <div class="what-head">
+          <span class="eyebrow">What Caution does</span>
+          <h2 class="section-title">Stronger integrity guarantees</h2>
+          <p class="section-desc">Caution is a verifiable confidential compute platform that gives you cryptographic proof your enclaves run the exact code you reviewed.</p>
+        </div>
+        <div class="what-frame">
+          <div class="tabs" role="tablist">
+            <button class="tab active" data-tab="0" role="tab">Prove what was deployed</button>
+            <button class="tab" data-tab="1" role="tab">Detect tampering early</button>
+            <button class="tab" data-tab="2" role="tab">Deploy to enclaves in minutes</button>
+            <button class="tab" data-tab="3" role="tab">Keep your workflows</button>
+          </div>
+          <div>
+            <div class="panel active" data-panel="0">
+              <svg class="pix" data-pix="check"></svg>
+              <div>
+                <h3>Prove what was deployed</h3>
+                <p>Cryptographically link the code running in your enclave to the reviewed source code, build, and configuration that produced it.</p>
+                <p>Verify the entire stack down to the kernel, not just the application layer, with full-source bootstrapping and <a href="https://docs.caution.co/concepts/reproducibility/" target="_blank" rel="noopener noreferrer">reproducibility</a>.</p>
+              </div>
+            </div>
+            <div class="panel" data-panel="1">
+              <svg class="pix" data-pix="eye"></svg>
+              <div>
+                <h3>Detect tampering early</h3>
+                <p>Surface unauthorised changes before they reach production. If a binary doesn't match the expected source, you'll know immediately.</p>
+              </div>
+            </div>
+            <div class="panel" data-panel="2">
+              <svg class="pix" data-pix="bolt"></svg>
+              <div>
+                <h3>Deploy to enclaves in minutes</h3>
+                <p>Replace weeks of custom infrastructure and security engineering with one unified workflow that runs in minutes. Deploying to a Nitro Enclave has never been this fast.</p>
+              </div>
+            </div>
+            <div class="panel" data-panel="3">
+              <svg class="pix" data-pix="loop"></svg>
+              <div>
+                <h3>Keep your workflows</h3>
+                <p>Integrate with your existing CI/CD, infrastructure-as-code, and deployment tooling. Caution fits into what you already use rather than replacing it.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="what-cta">
+          <div class="cta-group">
+            <a href="contact.html" class="cta-btn">Book a demo</a>
+            <a href="platform-tour.html" class="cta-link">Watch the 3-minute tour
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who it's for -->
+    <section class="who" id="who">
+      <div class="ticker"><div class="ticker-track" data-ticker></div></div>
+      <div class="container who-grid">
+        <div class="vmarquee"></div>
+        <div class="who-right">
+          <span class="eyebrow">Who it's for</span>
+          <h2>Works everywhere it matters</h2>
+          <p>Caution works across industries and workload types. It is most useful for high-assurance workloads where integrity failures would be costly or catastrophic.</p>
+          <a href="#use-cases" class="cta-link">See how teams use Caution
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="ticker bottom"><div class="ticker-track" data-ticker></div></div>
+    </section>
+
+    <!-- Use cases -->
+    <section class="uc" id="use-cases" data-where="environments">
+      <div class="container">
+        <span class="eyebrow">Use cases</span>
+        <h2 class="section-title">How teams use Caution</h2>
+        <p class="section-desc">Explore common workloads teams deploy with verifiable builds and cryptographic proof.</p>
+        <div class="uc-carousel"><div class="uc-track"></div></div>
+        <div class="uc-arrows">
+          <button class="uc-arrow prev" aria-label="Previous use case"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+          <button class="uc-arrow next" aria-label="Next use case"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEE support -->
+    <section class="tee" id="tee">
+      <div class="container two-col">
+        <div>
+          <h2>One workflow for secure enclaves</h2>
+          <p class="section-desc">Caution runs across AWS Nitro today, with Intel TDX, AMD SEV-SNP, and TPM 2.0 attestations coming in 2026.</p>
+          <div class="cta-group">
+            <a href="contact.html" class="cta-btn">Book a demo</a>
+            <a href="https://distrust.co/blog/enclaveos.html#the-problem-with-single-layer-attestation" target="_blank" rel="noopener noreferrer" class="cta-link">Learn more
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="tee-logos">
+          <div class="tee-logo"><span class="live">LIVE</span><strong>AWS</strong><small>Nitro Enclaves</small></div>
+          <div class="tee-logo dim"><strong>Intel</strong><small>TDX</small></div>
+          <div class="tee-logo dim"><strong>AMD</strong><small>SEV-SNP</small></div>
+          <div class="tee-logo dim"><strong>TPM</strong><small>2.0</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="how" id="how">
+      <div class="container">
+        <span class="eyebrow">How it works</span>
+        <h2 class="section-title">Deploy in minutes</h2>
+        <p class="section-desc">From source to a verifiable enclave in minutes. <a href="platform-tour.html">Watch this video</a> for a full platform walkthrough.</p>
+        <div class="how-cards">
+          <div class="how-card">
+            <span class="num">1</span>
+            <h3>Initialize</h3>
+            <p>Run <code>caution init</code> to create a Procfile and other data required for the application.</p>
+            <div class="terminal" data-term='["$ caution init","Initializing the app..."]'></div>
+          </div>
+          <div class="how-card">
+            <span class="num">2</span>
+            <h3>Deploy</h3>
+            <p>Push with <code>git push caution main</code>. Caution builds a reproducible enclave image and provisions the TEE.</p>
+            <div class="terminal" data-term='["$ git push caution main","Building enclave image...","✓ Deployed to enclave"]'></div>
+          </div>
+          <div class="how-card">
+            <span class="num">3</span>
+            <h3>Verify</h3>
+            <p>Run <code>caution verify</code> to rebuild the image, compare hashes, and confirm exactly what the enclave is running.</p>
+            <div class="terminal" data-term='["$ caution verify","Collecting source code...","Rebuilding image...","Comparing hashes...","✓ Attestation verification PASSED"]'></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <span class="eyebrow">FAQs</span>
+        <h2>Frequently asked questions</h2>
+        <div class="faq-items">
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>What is Caution?</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><div>
+              <p>Caution is a verifiable compute platform that adds an extra layer of integrity guarantees on top of confidential compute. It cryptographically links the code running inside an enclave back to the reviewed source code, build inputs, and configuration that produced the enclave image, so anyone can verify what is running in production.</p>
+              <p>Caution currently supports deployments on AWS Nitro Enclaves, with additional attestation backends in active development.</p>
+            </div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Does Caution replace AWS Nitro Enclaves?</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><div>
+              <p>No. Caution builds on top of AWS Nitro Enclaves, not instead of them. Nitro provides hardware-level isolation and attestation. Caution extends those guarantees by linking enclave measurements back to auditable source code and reproducible builds.</p>
+            </div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>What do I need to get started?</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><div>
+              <p><a href="contact.html#book">Book 20 minutes</a> with one of our engineers. We'll discuss your goals, answer technical questions, and help you get ready to deploy with Caution.</p>
+            </div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Which deployment options are available?</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button>
+            <div class="faq-a"><div>
+              <p>Caution offers bring-your-own-compute and fully managed deployment options. Because Caution is open source, teams can also self-host it if they want to operate deployments independently.</p>
+              <p>Compare the options in the <a href="https://docs.caution.co/reference/deployment-models/" target="_blank" rel="noopener noreferrer">deployment models</a> reference.</p>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final">
+      <div class="container">
+        <div class="final-inner">
+          <div>
+            <h2>Get started</h2>
+            <div class="cta-group">
+              <a href="contact.html" class="cta-btn">Book a demo</a>
+              <a href="platform-tour.html" class="cta-link">Watch the tour
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+          <p>Deploy confidential compute in minutes. Prove exactly what is running in production, from source code to live enclave.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="layout.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

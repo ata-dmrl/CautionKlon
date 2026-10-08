@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Security evidence | Caution</title>
+  <meta name="description" content="Replace operator assurances with verifiable evidence." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="pages.css" />
+  <script>try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+</head>
+<body data-root="">
+  <div id="site-header"></div>
+  <main>
+<section class="page-hero"><div class="container two-col">
+<div><span class="eyebrow">For CISOs and security leaders</span>
+<h1>Replace operator assurances with verifiable evidence.</h1>
+<p class="section-desc">Verify the software handling sensitive data, protect data all the way into a verified workload, and release secrets only to approved workload identities.</p>
+<div class="cta-group"><a href="contact.html" class="cta-btn">Talk to our team</a></div></div>
+<ul class="without" aria-label="What your team can substantiate">
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><strong style="color:var(--text)">Software identity</strong><br>Reviewed source and build inputs correspond to the live workload.</span></li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><strong style="color:var(--text)">Protected data path</strong><br>Sensitive payloads stay encrypted until they reach the verified workload.</span></li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><strong style="color:var(--text)">Policy-controlled access</strong><br>Secret delivery can depend on an approved workload identity.</span></li>
+</ul></div></section>
+
+<section class="block"><div class="container">
+<div class="block-head"><span class="eyebrow">Security outcomes</span><h2 class="section-title">What your security team can verify and enforce</h2>
+<p class="section-desc">Claims that normally depend on an operator become evidence and policy decisions you can review independently.</p></div>
+<div class="grid c3"><div class="card"><span class="eyebrow">01</span><h3>Know what software is running</h3><p>Tie an approved release to a live workload identity using reviewed source, controlled build inputs and reproducible evidence.</p></div><div class="card"><span class="eyebrow">02</span><h3>Release secrets only to approved workloads</h3><p>Make secret delivery conditional on workload approval, so a changed runtime is denied access.</p></div><div class="card"><span class="eyebrow">03</span><h3>Protect data all the way into the workload</h3><p>Keep sensitive payloads encrypted end to end until they reach the verified workload.</p></div><div class="card"><span class="eyebrow">04</span><h3>Give customers and auditors independent verification</h3><p>Authorized reviewers inspect the evidence with open tooling instead of trusting the operator.</p></div><div class="card"><span class="eyebrow">05</span><h3>Choose where the service runs</h3><p>One verification model across fully managed, customer-cloud and self-hosted deployments.</p></div></div>
+</div></section>
+
+<section class="block alt"><div class="container">
+<div class="block-head"><span class="eyebrow">Independent verification</span><h2 class="section-title">Turn an approved release into a verifiable production identity</h2></div>
+<div class="grid c3 steps">
+<div class="card"><h3>Define what is approved</h3><p>Establish the reviewed software, build inputs, configuration and release identity you are prepared to trust.</p></div>
+<div class="card"><h3>Verify what is running</h3><p>Use independent tooling to compare the live workload identity with the approved release.</p></div>
+<div class="card"><h3>Use the result</h3><p>Feed the decision into release gates, monitoring, customer assurance and secret-delivery policies.</p></div>
+</div>
+<p style="margin-top:32px"><a href="https://docs.caution.co/concepts/verifiability/" target="_blank" rel="noopener noreferrer" class="cta-link">Read how Caution verification works <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></p>
+</div></section>
+
+<section class="block"><div class="container">
+<div class="block-head"><span class="eyebrow">Controls and evidence</span><h2 class="section-title">Turn verification into enforceable controls and usable evidence</h2></div>
+<div class="grid c3"><div class="card"><h3>Verify the deployed software</h3>
+<p><span class="eyebrow">Runtime control</span><br>Compare the live workload identity with the approved release.</p><p><span class="eyebrow">Evidence retained</span><br>Source and build inputs, expected vs. reproduced identity, live verification result.</p><p><span class="eyebrow">Security use</span><br>Release approval, change control, supplier diligence.</p>
+<div class="meta"><a href="https://docs.caution.co/concepts/verifiability/" target="_blank" rel="noopener noreferrer" class="read">Learn more <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div></div><div class="card"><h3>Protect sensitive data paths</h3>
+<p><span class="eyebrow">Runtime control</span><br>With protected transport enabled, data stays encrypted until it reaches the verified workload.</p><p><span class="eyebrow">Evidence retained</span><br>Where encryption starts and ends, who can see plaintext, behaviour on failed verification.</p><p><span class="eyebrow">Security use</span><br>Confidentiality architecture, privacy review, regression testing.</p>
+<div class="meta"><a href="https://docs.caution.co/concepts/encryption/" target="_blank" rel="noopener noreferrer" class="read">Learn more <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div></div><div class="card"><h3>Gate production secrets</h3>
+<p><span class="eyebrow">Runtime control</span><br>Release protected material only when the workload matches an approved baseline and policy is satisfied.</p><p><span class="eyebrow">Evidence retained</span><br>Approved identity, authorization policy, participants and outcome of each release.</p><p><span class="eyebrow">Security use</span><br>Policy enforcement, separation of duties, recovery readiness.</p>
+<div class="meta"><a href="https://docs.caution.co/concepts/key-services/" target="_blank" rel="noopener noreferrer" class="read">Learn more <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div></div></div>
+</div></section>
+
+<section class="block alt"><div class="container">
+<div class="block-head"><span class="eyebrow">High-assurance workloads</span><h2 class="section-title">Where verifiable software changes the risk model</h2></div>
+<div class="grid c2"><div class="card"><h3>Private AI and sensitive data processing</h3><p>Evidence about the software handling private prompts, models and records.</p><div class="frameworks" style="margin-top:8px"><span>AI providers</span><span>Healthcare</span><span>Financial services</span></div></div><div class="card"><h3>Signing, authorization, and key systems</h3><p>Verify which software can receive keys, approve transactions or issue credentials.</p><div class="frameworks" style="margin-top:8px"><span>Financial infrastructure</span><span>Digital assets</span><span>Identity</span></div></div><div class="card"><h3>Policy engines, oracles, and trusted data feeds</h3><p>Make the implementation behind high-impact decisions independently inspectable.</p><div class="frameworks" style="margin-top:8px"><span>Fintech</span><span>Critical infrastructure</span><span>Automated markets</span></div></div><div class="card"><h3>Verifiable SaaS and regulated processing</h3><p>Support customer diligence when sensitive workflows run outside their control.</p><div class="frameworks" style="margin-top:8px"><span>Enterprise SaaS</span><span>Public sector</span><span>Regulated data</span></div></div></div>
+</div></section>
+
+<section class="block"><div class="container">
+<div class="block-head"><span class="eyebrow">Deployment control</span><h2 class="section-title">Choose your deployment boundary</h2></div>
+<div class="grid c3"><div class="card"><span class="eyebrow">Fully managed</span><h3>Use Caution-operated infrastructure</h3><p>Caution manages the infrastructure and workload lifecycle; you keep the verification workflow.</p><div class="meta"><a href="https://docs.caution.co/reference/fully-managed/" target="_blank" rel="noopener noreferrer" class="read">Review the model <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div></div><div class="card"><span class="eyebrow">Bring your own compute</span><h3>Run in your cloud account</h3><p>Workloads, data, billing and network boundaries stay in your AWS account.</p><div class="meta"><a href="https://docs.caution.co/reference/byoc/" target="_blank" rel="noopener noreferrer" class="read">Review the model <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div></div><div class="card"><span class="eyebrow">Self-hosted</span><h3>Operate the platform independently</h3><p>Inspect and run the open-source platform yourself when your threat model requires it.</p><div class="meta"><a href="https://docs.caution.co/reference/deployment-models/#self-host" target="_blank" rel="noopener noreferrer" class="read">Review the model <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div></div></div>
+</div></section>
+
+<section class="block alt"><div class="container">
+<div class="block-head"><span class="eyebrow">Framework alignment</span><h2 class="section-title">Use technical evidence in the security programs you already rely on</h2>
+<p class="section-desc">Caution evidence can support architecture review, supplier diligence, control testing and audit preparation. It is a targeted mapping, not a certification.</p></div>
+<div class="frameworks"><span>NIST CSF 2.0</span><span>ISO/IEC 27001:2022</span><span>SOC 2</span><span>NIS2 Article 21</span></div>
+</div></section>
+
+<section class="faq"><div class="container"><span class="eyebrow">Common security questions</span><h2>Answers for security review</h2><div class="faq-items"><div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Which infrastructure and trust roots are supported today?</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button><div class="faq-a"><div><p>AWS Nitro Enclaves today; Intel TDX, AMD SEV-SNP and TPM 2.0 backends are in active development.</p></div></div></div><div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Does independent verification require public source code?</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button><div class="faq-a"><div><p>No. Public source enables open third-party verification; proprietary apps can be reviewed privately by authorized customers or auditors.</p></div></div></div><div class="faq-item"><button class="faq-q" aria-expanded="false"><span>What happens when the workload identity changes?</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button><div class="faq-a"><div><p>Verification fails because the identity no longer matches the approved baseline, and identity-bound secret delivery can stay denied until the change is approved.</p></div></div></div><div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Does Caution certify compliance?</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button><div class="faq-a"><div><p>No. Caution provides technical controls and evidence; scope, control operation and certification remain with you and your assessor.</p></div></div></div><div class="faq-item"><button class="faq-q" aria-expanded="false"><span>How do upgrades and emergency changes affect verification?</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button><div class="faq-a"><div><p>Any change to the measured workload produces a new identity, which should be reviewed and approved before policies rely on it.</p></div></div></div></div>
+<p class="callout" style="margin-top:40px">The strongest assurance depends on explicit trust assumptions. <a href="https://docs.caution.co/concepts/security-assumptions/" target="_blank" rel="noopener noreferrer" class="link">Review Caution's security assumptions</a>.</p>
+</div></section>
+
+<section class="final"><div class="container"><div class="final-inner">
+<div><span class="eyebrow">Enterprise evaluation</span><h2 style="margin-top:12px">Review a high-assurance workload with us</h2><div class="cta-group"><a href="contact.html" class="cta-btn">Talk to our team</a></div></div>
+<p>Bring the workload, threat model, and evidence requirements. We will help your security and platform teams evaluate how Caution fits the service.</p>
+</div></div></section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="layout.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
